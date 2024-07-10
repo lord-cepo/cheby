@@ -182,7 +182,7 @@ CONTAINS
 
    SUBROUTINE set_Si_example(error)
       TYPE(error_type), ALLOCATABLE, INTENT(OUT) :: error
-      CHARACTER(len=256), PARAMETER :: path = '../Examples/Silicon/reference/mat2R'
+      CHARACTER(len=256), PARAMETER :: path = 'test/mat2R'
 
       CALL read_fc2(path, Si_S,  Si_fc2)
       CALL aux_system(Si_S)

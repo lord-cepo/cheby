@@ -1,0 +1,22 @@
+name = "cheby"
+version = "0.1.0"
+license = "license"
+author = "lord-cepo"
+maintainer = "alessandro.ciavatta2@studenti.unibo.it"
+copyright = "Copyright 2024, lord-cepo"
+[build]
+auto-executables = false
+auto-tests = false
+auto-examples = false
+module-naming = false
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+[dev-dependencies]
+test-drive.git = "https://github.com/fortran-lang/test-drive"
+test-drive.tag = "v0.4.0"
+[library]
+source-dir = "./src"
+include-dir = ["../../Modules", "../thermal2", "../../PW/src", "../../UtilXlib", "..", "./src"]
+
